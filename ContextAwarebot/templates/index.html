@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PhishShield</title>
-    <link rel="stylesheet" href="{% static 'detector/style.css' %}">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
     <header id="site-header">
         <div id="site-header_container">
             <!-- Logo -->
             <a id="site-header_logo" href="{% url 'home' %}">
-                <img src="{% static 'detector/images/logo.png' %}" alt="PhishShield Logo" style="height: 40px;">
+                <img src="{% static 'logo.png' %}" alt="PhishShield Logo" style="height: 40px;">
             </a>
     
             <!-- Navigation Links -->
@@ -34,15 +34,15 @@
         </div>
     </header>
     <div class="slogan">
-        <h1>Copy. Paste. Prevent</h1>
+        <h1>Thinkcer</h1>
     </div>
-
+    
     <section class="home">
         <div class="container">
             <form method="POST" action="{% url 'home' %}">
                 {% csrf_token %}
                 <div class="input-wrapper">
-                    <input type="text" name="url" placeholder="Analyze the URL" required>
+                    <input type="text" name="url" placeholder="Thinkcer" required>
                     <button type="submit">✔</button> <!-- Icon or text -->
                 </div>
             </form>
